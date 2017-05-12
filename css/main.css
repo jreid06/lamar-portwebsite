@@ -1,0 +1,78 @@
+/* Using SCSS variables to store breakpoints */
+@media only screen and (min-width: 325px) and (orientation: landscape) {
+  body {
+    background-color: orange; } }
+.cstm-nv {
+  position: fixed;
+  z-index: 10000; }
+
+.main-container {
+  position: relative;
+  top: 10%; }
+
+.custom-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .custom-nav .logo {
+    width: 20%;
+    margin-right: 7%;
+    padding: 13px; }
+  .custom-nav .links {
+    margin-top: 15px;
+    height: 30px;
+    width: 73%; }
+    .custom-nav .links li {
+      display: inline;
+      text-align: center;
+      text-transform: uppercase;
+      border-right: 1px solid #010001;
+      padding-right: 9px;
+      font-size: 0.9em; }
+      .custom-nav .links li:nth-child(4) {
+        border-right: 0px solid #010001; }
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .flex-container .port-sec {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 30px; }
+    .flex-container .port-sec .project {
+      width: 90%;
+      margin: 50px auto;
+      height: 250px; }
+    .flex-container .port-sec .project01 {
+      background: url("../img/Pensole-01.png");
+      background-position: center;
+      background-size: cover; }
+    .flex-container .port-sec .project02 {
+      background: url("../img/Disney-01.png");
+      background-position: center;
+      background-size: cover; }
+    .flex-container .port-sec .project03 {
+      background: url("../img/Pencil-01.png");
+      background-position: center;
+      background-size: cover; }
+
+.bckgrnd-cvr {
+  background-color: #4E4E4E;
+  height: 0%;
+  width: 100%; }
+  .bckgrnd-cvr .pjct-titles {
+    width: 70%;
+    font-size: 1em;
+    text-transform: uppercase;
+    border: 0px solid pink;
+    visibility: hidden;
+    color: #f2f2f2;
+    position: relative;
+    top: 30px;
+    margin: 0 auto; }
+  .bckgrnd-cvr .prj-sml {
+    position: relative;
+    top: 50px; }
+
+/*# sourceMappingURL=main.css.map */

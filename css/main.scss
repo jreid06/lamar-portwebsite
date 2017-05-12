@@ -1,0 +1,195 @@
+$black: #010001;
+$white: #f2f2f2;
+
+
+/* Using SCSS variables to store breakpoints */
+// landscape variable
+$breakpoint-land: landscape;
+
+// Device Custom Breakpoints
+
+// **iphone 5s - small width devices
+$breakpoint-small: 325px;
+
+// **Samsung s5, nexus5 - small to medium devices
+$breakpoint-medium: 360px;
+
+// **Note 5, iphone 6 & 6s, iphone 7 - large
+$breakpoint-large: 404px;
+
+// **iPad, galaxy tab - Tablet devices
+$breakpoint-tablet: 768px;
+
+// **laptop screens
+$breakpoint-desktop: 1200px;
+
+
+.cstm-nv{
+  position: fixed;
+  z-index: 10000;
+
+}
+
+.main-container{
+  position: relative;
+  top: 10%;
+}
+
+.custom-nav{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .logo{
+    width: 20%;
+    margin-right: 7%;
+    padding: 13px;
+  }
+  .links{
+    // border: 0px solid $black;
+    margin-top: 15px;
+    height: 30px;
+    width: 73%;
+    li{
+      display: inline;
+      text-align: center;
+      text-transform: uppercase;
+      border-right: 1px solid $black;
+      padding-right: 9px;
+      font-size: 0.9em;
+      &:nth-child(4){
+        border-right: 0px solid $black;
+      }
+    }
+  }
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .port-sec{
+    width: 100%;
+    height: 250px;
+    margin-bottom: 30px;
+    // border: 1px solid red;
+    .project{
+      width: 90%;
+      margin: 50px auto;
+      height: 250px;
+      // background-color: gold;
+
+    }
+    .project01{
+      background: url("../img/Pensole-01.png");
+      background-position: center;
+      background-size: cover;
+    }
+    .project02{
+      background: url("../img/Disney-01.png");
+      background-position: center;
+      background-size: cover;
+    }
+    .project03{
+      background: url("../img/Pencil-01.png");
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}
+
+.bckgrnd-cvr{
+  background-color: #4E4E4E;
+  height: 0%;
+  width: 100%;
+  .pjct-titles{
+    width: 70%;
+    font-size: 1em;
+    text-transform: uppercase;
+    border: 0px solid pink;
+    visibility: hidden;
+    color: $white;
+    position: relative;
+    top: 30px;
+    margin: 0 auto;
+
+  }
+  .prj-sml{
+    position: relative;
+    top: 50px;
+  }
+
+
+}
+
+@media only screen and (min-width: $breakpoint-small) {
+  body{
+    // background-color: $black;
+  }
+
+}
+
+@media only screen and (min-width: $breakpoint-small) and (orientation: $breakpoint-land) {
+  body{
+    background-color: orange;
+  }
+}
+
+@media only screen and (min-width: $breakpoint-medium) {
+  body{
+    // background-color: $black;
+  }
+
+}
+
+@media only screen and (min-width: $breakpoint-medium) and (orientation: $breakpoint-land) {
+  body{
+    // background-color: orange;
+  }
+}
+
+@media only screen and (min-width: $breakpoint-large) {
+  body{
+    // background-color: $black;
+  }
+
+}
+
+@media only screen and (min-width: $breakpoint-large) and (orientation: $breakpoint-land) {
+  body{
+    // background-color: orange;
+  }
+}
+
+@media only screen and (min-width: $breakpoint-tablet) {
+  body{
+    // background-color: $black;
+  }
+
+}
+
+@media only screen and (min-width: $breakpoint-tablet) and (orientation: $breakpoint-land) {
+  body{
+    // background-color: orange;
+  }
+}
+
+@media only screen and (min-width: $breakpoint-desktop) {
+  body{
+    // background-color: $black;
+  }
+
+}
+
+@media only screen and (min-width: $breakpoint-desktop) and (orientation: $breakpoint-land) {
+  body{
+    // background-color: orange;
+  }
+}
+
+// .square{
+//   width: 30%;
+//   height: 100px;
+//   background-color: gold;
+//   border: 1px solid $black;
+// }
